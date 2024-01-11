@@ -7,11 +7,11 @@ import jakarta.persistence.ManyToOne;
 
 @Embeddable
 public class CommentId implements Serializable {
-	
+
 	private static final long serialVersionUID = -3690211290276882371L;
 	private User user;
 	private Feature feature;
-	
+
 	@ManyToOne
 	public User getUser() {
 		return user;
@@ -19,7 +19,7 @@ public class CommentId implements Serializable {
 	public void setUser(User user) {
 		this.user = user;
 	}
-	
+
 	@ManyToOne
 	public Feature getFeature() {
 		return feature;
@@ -27,5 +27,5 @@ public class CommentId implements Serializable {
 	public void setFeature(Feature feature) {
 		this.feature = feature;
 	}
-	
+
 }

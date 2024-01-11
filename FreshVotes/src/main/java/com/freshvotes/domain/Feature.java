@@ -7,12 +7,12 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Feature {
-	
+
 	private Long id;
 	private String title;
 	private String description;
 	private String status;
-	
+
 	// We need to tell jpa what the id is. Strategy to use is identity: automatically increment id in the table
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	public Long getId() {

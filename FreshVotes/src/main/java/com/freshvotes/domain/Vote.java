@@ -5,11 +5,11 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Vote {
-	
+
 	// Obj that contains the foreign keys
 	private VoteId pk;
 	private Boolean upvote;
-	
+
 	@EmbeddedId
 	public VoteId getPk() {
 		return pk;

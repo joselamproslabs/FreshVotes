@@ -6,10 +6,10 @@ import jakarta.persistence.Entity;
 
 @Entity
 public class Comment {
-	
+
 	private CommentId pk;
 	private String text;
-	
+
 	@EmbeddedId
 	public CommentId getPk() {
 		return pk;
@@ -17,7 +17,7 @@ public class Comment {
 	public void setPk(CommentId pk) {
 		this.pk = pk;
 	}
-	
+
 	@Column(length=5000)
 	public String getText() {
 		return text;

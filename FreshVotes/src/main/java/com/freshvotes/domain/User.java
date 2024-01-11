@@ -6,17 +6,17 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-// Annotation 
+// Annotation
 @Entity
 // MySQL there is a table User. Change the name to Users
 @Table(name="Users")
 public class User {
-	
+
 	private Long id;
 	private String username;
 	private String password;
 	private String name;
-	
+
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	public Long getId() {
 		return id;
@@ -42,5 +42,5 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 }
