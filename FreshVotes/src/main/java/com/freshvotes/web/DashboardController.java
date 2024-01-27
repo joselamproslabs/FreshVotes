@@ -12,4 +12,10 @@ public class DashboardController {
 		// Return Index View
 		return "index";
 	}
+	
+	@GetMapping(value="/dashboard")
+	public String dashboard() {
+		// Return dashboard View
+		return "dashboard";
+	}
 }
